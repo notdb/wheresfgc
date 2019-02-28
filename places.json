@@ -1,0 +1,51 @@
+{
+	"id": [{
+			"name": "Esports Arena Orange County",
+			"street": "120 W. 5th St",
+			"town": "Santa Ana",
+			"state": "CA",
+			"zipcode": "92701",
+			"latt": "33.747800",
+			"longt": "-117.865700"
+		},
+		{
+			"name": "Esports Arena Oakland",
+			"street": "255 2nd Street",
+			"town": "Oakland",
+			"state": "CA",
+			"zipcode": "94607",
+			"latt": "37.853100",
+			"longt": "-122.295900"
+		},
+		{
+			"name": "Super Arcade",
+			"street": "123 E Foothill Blvd",
+			"town": "Azusa",
+			"state": "CA",
+			"zipcode": "91702",
+			"latt": "34.259163",
+			"longt": "-117.858587"
+		},
+		{
+			"name": "Esports Arena Las Vegas",
+			"street": "3900 S. Las Vegas Blvd",
+			"town": "Las Vegas",
+			"state": "NV",
+			"zipcode": "89119",
+			"latt": "36.082900",
+			"longt": "-115.123800"
+		},
+		{
+			"name": "Next Level Arcade",
+			"street": "874 4th Ave",
+			"town": "Brooklyn",
+			"state": "NY",
+			"zipcode": "11232",
+			"latt": "40.655300",
+			"longt": "-74.004400"
+		}
+
+
+	]
+
+}

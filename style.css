@@ -1,0 +1,288 @@
+
+.gridWrapper {
+  display: grid;
+  /*grid-template-columns: minmax(100px, max-content);
+  grid-template-rows: 8em 8em 8em 8em 8em 8em 8em 8em 8em 8em 8em 8em; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .75fr .5fr .5fr .5fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr 1fr;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(73,113,138,.6);
+  font-size: 1.5em;
+}
+
+/*
+ .gridWrapper::after {
+  content: "";
+  background: url(images/carl.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+*/
+.header {
+  display: flex;
+  background: rgba(138,141,119,1); 
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+  padding-left: 1em;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.startHere {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+.userArcadeInput {
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 10;
+  grid-row-end: 10;
+
+  padding-left:1.3em;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.userZipCode {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 4;
+  grid-row-end: 4;
+
+  
+}
+
+.arcadeListHeadline {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start:5;
+  grid-row-end:6;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.json {
+  display:flex;
+  justify-items: center;
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  padding-left: 5%;
+}
+
+.topThree {
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  grid-row-start: 3;
+  grid-row-end: 5;
+
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.gmapsHeadlineText{
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  grid-row-start:2;
+  grid-row-end:3;
+
+  display:none;
+  align-items:center;
+  justify-content:center;
+
+
+}
+
+#gmaps {
+  width: 400px;
+  height: 400px;
+
+  grid-column-start: 3;
+  grid-column-end: 5;
+  
+  grid-row-start: 5;
+  grid-row-end: 9;
+
+  overflow: auto;
+  width: 85%;
+  padding-left: 5%;
+  margin-left: 2em;
+  margin-top: .5em;
+}
+
+.footer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+  background-color: rgba(15,0,238,1); 
+  padding-left: 1em;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+.arrow a:before {
+    width:16px;
+    height:16px;
+    /* css3 */
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    border-radius:16px;
+}
+
+.arrow1 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+  height: 5em;
+  width: 5em;
+  color:blue;
+  transform-origin: 50px 50px;
+  transform: rotate(45deg);
+}
+
+.arrow {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 44px 10px;
+}
+.arrow:before, .arrow:after {
+  content: '';
+  border-color: transparent;
+  border-style: solid;
+  position: absolute;
+}
+
+.arrow-left:before {
+  border: none;
+  background-color: #555;
+  height: 30%;
+  width: 50%;
+  top: 35%;
+  left: 50%;
+}
+.arrow-left:after {
+  left: -50%;
+  top: 0;
+  border-width: 20px 20px;
+  border-right-color: #555;
+}
+
+.emailSubscribe {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 9;
+  grid-row-end: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userEmail {
+  margin-left: 1em;
+}
+
+body {
+  font-size: 15em;
+}
+
+.arrow111 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  width: 50%;
+  height: 50%;
+
+  position: relative;
+  bottom: -.75em;
+  left: 5em;
+  z-index: -1;
+}
+
+section {
+  padding-left: .5em;
+}
+
+.formHeight {
+  height: 2em;
+}
+
+.userExplanation {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 3;
+  grid-row-end: 3;
+
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  margin-left: 7em;
+  margin-right: 5em;
+}
+
+.formPadding {
+  padding-left: 1.3em;
+}
